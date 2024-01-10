@@ -1,9 +1,0 @@
-Symfony 6.4.0
-Symfony CLI 5.8.0
-PHP CGI 8.1.10
-IDE PHPStorm / DataGrip
-_ Symphony support
-Add package
-- composer require profiler --dev #ajout profiler tools dev
-- composer require --dev symfony/test-pack #PHPUnit https://symfony.com/doc/current/testing.html
-- composer require symfony/http-client

@@ -9,3 +9,8 @@
 .phpunit.result.cache
 ###< phpunit/phpunit ###
 /var
+
+###> symfony/asset-mapper ###
+/public/assets/
+/assets/vendor
+###< symfony/asset-mapper ###

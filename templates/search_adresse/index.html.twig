@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SearchAdresseController!{% endblock %}
+{% block body %}
+
+<article>
+    <div class="example-wrapper container-fluid">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+            <h1>Hello {{ controller_name }}</h1>
+            <form autocomplete="off">
+                <label for="q">Chercher une adresse</label>
+                <input type="text" name="q" id="q" class="form-control autocomplete" onKeyUp="showResults(this.value)" placeholder="Chercher une adresse" />
+                <div id="result"></div>
+            </form>
+        </main>
+    </div>
+</article>
+
+{% endblock %}
