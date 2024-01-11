@@ -16,7 +16,7 @@ class CallApiService
         $this->data = [];
     }
 
-    public function getAdressesDataGouv($request):String
+    public function getAddressesDataGuv($request):String
     {
 
         if (strlen($request['q']) > 4){

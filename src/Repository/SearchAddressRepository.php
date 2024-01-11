@@ -2,23 +2,23 @@
 
 namespace App\Repository;
 
-use App\Entity\SearchAdresse;
+use App\Entity\SearchAddress;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<SearchAdresse>
+ * @extends ServiceEntityRepository<SearchAddress>
  *
- * @method SearchAdresse|null find($id, $lockMode = null, $lockVersion = null)
- * @method SearchAdresse|null findOneBy(array $criteria, array $orderBy = null)
- * @method SearchAdresse[]    findAll()
- * @method SearchAdresse[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method SearchAddress|null find($id, $lockMode = null, $lockVersion = null)
+ * @method SearchAddress|null findOneBy(array $criteria, array $orderBy = null)
+ * @method SearchAddressSearchAddressRepository    findAll()
+ * @method SearchAddress[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class SearchAdresseRepository extends ServiceEntityRepository
+class SearchAddressRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, SearchAdresse::class);
+        parent::__construct($registry, SearchAddress::class);
     }
 
 //    /**

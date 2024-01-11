@@ -3,12 +3,12 @@
 namespace App\Entity;
 
 use App\Controller\ApiController;
-use App\Repository\SearchAdresseRepository;
+use App\Repository\SearchAddressRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: SearchAdresseRepository::class)]
-class SearchAdresse
+#[ORM\Entity(repositoryClass: SearchAddressRepository::class)]
+class SearchAddress
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -16,7 +16,7 @@ class SearchAdresse
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $adresse = null;
+    private ?string $address = null;
 
     #[ORM\Column(length: 39)]
     private ?string $ip = null;
@@ -29,14 +29,14 @@ class SearchAdresse
         return $this->id;
     }
 
-    public function getAdresse(): ?string
+    public function getAddress(): ?string
     {
-        return $this->adresse;
+        return $this->address;
     }
 
-    public function setAdresse(string $adresse): static
+    public function setAddress(string $address): static
     {
-        $this->adresse = $adresse;
+        $this->address = $address;
 
         return $this;
     }
@@ -67,6 +67,6 @@ class SearchAdresse
 
     public function __toString(): string
     {
-        return $this->adresse;
+        return $this->address;
     }
 }
